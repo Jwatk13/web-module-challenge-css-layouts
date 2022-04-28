@@ -75,6 +75,13 @@ nav {
     padding: 2%;
 }
 
+.navi {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
 h1 {
     padding: 2%;
     display: flex;
@@ -183,3 +190,95 @@ footer p {
     font-size: large;
 }
 
+/* iPhone: 360×640
+Laptop: 1366×768
+Widescreen: 1920×1080 */
+@media(max-width: 1920px) {
+    .main div {
+        width: 33%;
+        height: 30vh;
+    }
+
+    footer p {
+        padding: 1%;
+    }
+
+    .contactMe {
+        margin-bottom: 2%;
+    }
+}
+
+@media(max-width: 1366px) {
+    .myProjects {
+        width: 25%;
+        font-size: medium;
+    }
+}
+
+@media(max-width: 800px) {
+    .first {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .main div {
+        width: 40%;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .contactMe {
+        width: 35%;
+        font-size: medium;
+    }
+}
+
+@media(max-width: 500px) {
+    .first {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .navi {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main div {
+        width: 40%;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .contactMe {
+        width: 35%;
+        font-size: medium;
+    }
+}
+
+@media(max-width: 360px) {
+    .navi {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .first {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .main div {
+        justify-content: center;
+    }
+
+    .contactMe {
+        width: 35%;
+        font-size: medium;
+    }
+}
